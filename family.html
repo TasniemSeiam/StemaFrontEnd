@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stema</title>
+  <link rel="shortcut icon" href="images/Color logo - no background.png" type="image/x-icon">
+  <link rel="stylesheet" href="CSS/all.min.css">
+  <link rel="stylesheet" href="CSS/animate.css">
+  <link rel="stylesheet" href="CSS/bootstrap.min.css">
+  <link rel="stylesheet" href="CSS/aos.css">
+  <link rel="stylesheet" href="CSS/style.css">
+  <!-- <style>
+    .container {
+      width: 150px;
+      height: 150px;
+      position: relative;
+      margin: 30px;
+      border: solid;
+    }
+    .box {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0.7;
+      background: #0057e3;
+    }
+    .overlay {
+      z-index: 9;
+      margin: 30px;
+      background: #009938;
+    }
+  </style> -->
+</head>
+
+<body>
+
+<!-- 
+  <div class="container">
+    <div class="box"></div>
+    <div class="box overlay"></div>
+  </div> -->
+  <!-- <section>
+      <div class="continer "id="waitting">
+          <div class="row d-flex">
+              <div class="col-12"><img src="images/team.png" alt=""></div>
+              <h5>We Are Working On Your Data You Will Get The Result In A Few Seconds </h5>
+          </div>
+      </div>
+  </section> -->
+  <!--waiting-->
+  <!-- <section>
+
+    <div class="continer "id="fail">
+        <div class="row d-flex">
+            
+            <h4>Unfotunatly,Your Stem Cells Are <span class="reject">Rejected</span> They Are Not Efficient Enough To Be Stored </h4>
+            <div class="col-12"><img src="images/Feeling sorry-cuate 1.png" alt=""></div>
+            <button type="submit" id="toggle">Back</button>
+        </div>
+    </div>
+</section> -->
+<!--rejection-->
+
+  <section>
+    <div class="continer " id="accept">
+      <div class="row d-flex">
+        <h4>Your Stem Cells Are <span class="accept">Accepted</span> With A 75% Acceptance Rate</h4>
+      <div class="boundry"> <div class="mycontainer">
+        <div class="circular-progress">
+          <div class="value-container">0%</div>
+        </div>
+      </div></div> 
+
+        <button type="submit" id="toggle">Back</button>
+      </div>
+    </div>
+  </section>
+  <!--progress-->
+
+  <button id="toggle">Hide THIRD div</button>
+
+
+
+
+  <script>
+    ////////button
+    const targetDiv = document.getElementById("waitting");
+    const btn = document.getElementById("toggle");
+    btn.onclick = function () {
+      if (targetDiv.style.display !== "none") {
+        targetDiv.style.display = "none";
+      } else {
+        targetDiv.style.display = "block";
+      }
+    };
+    //////////////////////////acceptance bar///////////
+    let progressBar = document.querySelector(".circular-progress");
+    let valueContainer = document.querySelector(".value-container");
+
+    let progressValue = 0;
+    let progressEndValue = 40;
+    let speed = 50;
+
+    let progress = setInterval(() => {
+      progressValue++;
+      valueContainer.textContent = `${progressValue}%`;
+      progressBar.style.background = `conic-gradient(
+      #0de526 ${progressValue * 3.6}deg,
+      #cadcff ${progressValue * 3.6}deg
+  )`;
+      if (progressValue == progressEndValue) {
+        clearInterval(progress);
+      }
+    }, speed);
+
+
+  </script>
+
+
+  <script src="JS/bootstrap.bundle.min.js"></script>
+  <script src="JS/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+  <script src="JS/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

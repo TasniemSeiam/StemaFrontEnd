@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stema-ForgetPassword</title>
+    <link rel="shortcut icon" href="images/Color logo - no background.png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/animate.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/aos.css">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <section>
+        <div class="container-fluid m-auto p-5">
+            <div class="row">
+                <div class="col-lg-4 col-sm-4 col-md-4 col-xl-4 left-side text-center">
+                    <h4 class="mb-5">Sign-up now to start building your work in minutes. It's easy!</h4>
+                    <br /> <br /> <br /> <br />
+                    <div class="overflow-div">
+
+                        <div class="image" data-aos="fade-up">
+                            <img src="images/2.png" alt="doctor-photo" width="750px" >
+                        </div>
+                    </div>
+
+
+                </div><!--  left-side -->
+
+                <div class="col-lg-1 col-sm-1 col-md-1 col-xl-1"></div>
+
+                <!----------------  right-side  ----------->
+
+                <div class="right-side col-lg-7 col-sm-7 col-md-7 col-xl-7  " >
+                    <div class="mt-5"  id="right-side">
+                        <div class="row mt-5" id="row1">
+                            <div class="col-lg-6 col-sm-6 col-md-6 col-xl-6 mt-1">
+                                <h4  id="text1">Create account</h4>
+                                <h6 class="mb-2 text-muted"  id="text2">Enter The e-mail address associated with your account, we will send your code with instructions to reset your password</h6>
+                            </div>
+                            <div class="col-lg-6 col-sm-6 col-md-6 col-xl-6 me-0 pe-0">
+
+                                <a href="index.html" class="logo-link"><img src="images\Color logo - no background.png" alt="STEMA-logo"
+                                        width="100px"  data-aos="fade-down"></a>
+                            </div>
+                        </div> <!-- end of row -->
+
+                        <form class="row mt-3">
+                            
+                            <div class="d-grid my-auto d-inline mt-4" >
+                                <label for="email" class="form-label emLabel">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                            </div> <!-- email -->
+
+                           
+                                <div class="row  row-cols-lg-auto g-3 align-items-center  code" data-aos="fade-down">
+                                    <div class="col-1">
+                                      <div class="input-group">
+                                         <input type="text" class="form-control code-inp">
+                                      </div>
+                                    </div>
+                                    <div class="col-1">
+                                      <div class="input-group">
+                                         <input type="text" class="form-control code-inp" >
+                                      </div>
+                                    </div>
+                                    <div class="col-1">
+                                      <div class="input-group">
+                                         <input type="text" class="form-control code-inp" >
+                                      </div>
+                                    </div>
+                                    <div class="col-1">
+                                      <div class="input-group">
+                                         <input type="text" class="form-control code-inp" >
+                                      </div>
+                                    </div>
+                                    <div class="col-1">
+                                      <div class="input-group">
+                                         <input type="text" class="form-control code-inp" >
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="d-grid my-auto d-inline ">
+                                    <label for="inputPassword4" class="form-label pass">Password</label>
+                                    <input type="password" class="form-control pass" id="inputPassword4">
+                                  </div>
+
+                                  <div class="d-grid my-auto d-inline mt-1">
+                                    <label for="inputconPass" class="form-label pass">Confirm password</label>
+                                    <input type="password" class="form-control pass" id="inputconPass">
+                                  </div>
+
+                            <div class="d-grid my-auto d-inline mt-4 mb-3">
+                                <a class="btn btn-primary" type="button" onclick="Sending()" id="send-code">Send Code</a>
+                            </div> <!-- send code button -->
+                            <div class="d-grid my-auto mb-3" >
+                                <a class="btn btn-primary back-btn"   id="back" type="button" href="login.html">Back</a>
+                            </div> <!-- back button -->
+
+                            <div class="d-grid my-auto d-inline">
+                                <a class="btn btn-primary" type="button" onclick="Submitting()"  id="submit">Submit</a>
+                                <p  class="text-center" id="text3">
+                                    It may take a minute to receive your code didn't receive it yet? <a href="#"> Resend a new code</a>
+                                </p>
+                            </div>
+
+                            <div class="d-grid my-auto d-inline">
+                                <a class="btn btn-primary" type="button"  id="reset">Save</a>
+                            </div> <!-- send code button -->
+                        </form>
+
+                    </div>
+                    <!--end-div-form-->
+                </div><!--  right-side -->
+            </div> <!-- row  -->
+        </div>
+    </section>
+
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="JS/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="JS/script.js"></script>
+</body>
+
+</html>
